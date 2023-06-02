@@ -19,13 +19,11 @@ class HomeMenuList extends StatelessWidget {
           physics:
               const NeverScrollableScrollPhysics(), // to disable GridView's scrolling
           shrinkWrap: true,
-          padding: const EdgeInsets.only(
-            top: 10,
-          ),
+          padding: const EdgeInsets.only(top: 10, left: 16, right: 16),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            childAspectRatio: 1,
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10,
+            childAspectRatio: 0.75,
+            crossAxisSpacing: 8,
+            mainAxisSpacing: 12,
             crossAxisCount: 2,
           ),
           itemBuilder: (_, index) => Menucard(

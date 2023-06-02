@@ -8,39 +8,94 @@ class AppTheme {
       primaryColor: Helper.hexCodeToColor("#129575"),
       textTheme: const TextTheme(
         displayLarge: TextStyle(
-          fontSize: 20,
+          fontSize: 57,
           fontFamily: FontsConstant.poppins,
           color: Colors.black,
-          fontWeight: FontWeight.w900,
+          fontWeight: FontWeight.w100,
         ),
         displayMedium: TextStyle(
-          fontSize: 18,
+          fontSize: 45,
           fontFamily: FontsConstant.poppins,
           color: Colors.black,
-          fontWeight: FontWeight.w900,
+          fontWeight: FontWeight.w100,
         ),
         displaySmall: TextStyle(
+          fontSize: 36,
+          fontFamily: FontsConstant.poppins,
+          color: Colors.black,
+          fontWeight: FontWeight.w100,
+        ),
+        headlineLarge: TextStyle(
+          fontSize: 32,
+          fontFamily: FontsConstant.poppins,
+          color: Colors.black,
+          fontWeight: FontWeight.w100,
+        ),
+        headlineMedium: TextStyle(
+          fontSize: 28,
+          fontFamily: FontsConstant.poppins,
+          color: Colors.black,
+          fontWeight: FontWeight.w100,
+        ),
+        headlineSmall: TextStyle(
+          fontSize: 24,
+          fontFamily: FontsConstant.poppins,
+          color: Colors.black,
+          fontWeight: FontWeight.w100,
+        ),
+        titleLarge: TextStyle(
+          fontSize: 22,
+          fontFamily: FontsConstant.poppins,
+          color: Colors.black,
+          fontWeight: FontWeight.w300,
+        ),
+        titleMedium: TextStyle(
           fontSize: 16,
           fontFamily: FontsConstant.poppins,
           color: Colors.black,
-          fontWeight: FontWeight.w900,
+          fontWeight: FontWeight.w300,
         ),
-        bodyLarge: TextStyle(
+        titleSmall: TextStyle(
           fontSize: 14,
           fontFamily: FontsConstant.poppins,
           color: Colors.black,
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w300,
         ),
-        bodyMedium: TextStyle(
+        labelLarge: TextStyle(
+          fontSize: 14,
+          fontFamily: FontsConstant.poppins,
+          color: Colors.black,
+          fontWeight: FontWeight.w300,
+        ),
+        labelMedium: TextStyle(
+          fontSize: 12,
+          fontFamily: FontsConstant.poppins,
+          color: Colors.black,
+          fontWeight: FontWeight.w300,
+        ),
+        labelSmall: TextStyle(
           fontSize: 11,
           fontFamily: FontsConstant.poppins,
           color: Colors.black,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w300,
         ),
-        bodySmall: TextStyle(
-          fontSize: 9,
+        bodyLarge: TextStyle(
+          fontSize: 16,
           fontFamily: FontsConstant.poppins,
           color: Colors.black,
+          fontWeight: FontWeight.w100,
+        ),
+        bodyMedium: TextStyle(
+          fontSize: 14,
+          fontFamily: FontsConstant.poppins,
+          color: Colors.black,
+          fontWeight: FontWeight.w100,
+        ),
+        bodySmall: TextStyle(
+          fontSize: 12,
+          fontFamily: FontsConstant.poppins,
+          color: Colors.black,
+          fontWeight: FontWeight.w100,
         ),
       ),
     );

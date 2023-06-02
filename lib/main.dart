@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/config/themes/app_theme.dart';
+import 'package:food_app/constant/routes_constant.dart';
 import 'config/envs/env.dart';
+import 'config/routes/routes.dart';
 
 void main() async {
   await Envrionment.load();
@@ -15,9 +18,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      // theme: AppTheme.light,
-      // initialRoute: RoutesConstant.home,
-      // onGenerateRoute: AppRoutes.onGenerateRoutes,
+      theme: AppTheme.light,
+      initialRoute: RoutesConstant.home,
+      onGenerateRoute: AppRoutes.onGenerateRoutes,
     );
   }
 }
