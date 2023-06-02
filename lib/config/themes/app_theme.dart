@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/constant/colors_constant.dart';
 import 'package:food_app/constant/fonts_constant.dart';
 import 'package:food_app/utils/helper.dart';
 
@@ -96,6 +97,13 @@ class AppTheme {
           fontFamily: FontsConstant.poppins,
           color: Colors.black,
           fontWeight: FontWeight.w100,
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(20),
+          borderSide:
+              const BorderSide(width: 0, color: ColorConstants.lightGrey),
         ),
       ),
     );

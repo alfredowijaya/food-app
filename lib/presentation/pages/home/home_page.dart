@@ -28,16 +28,18 @@ class _HomePageState extends State<HomePage> {
   Future onRefresh() async {
     await _menuCategoryCubit.fetchMenuCategories();
 
-    String defaultMenuCategory =
-        _menuCategoryCubit.state.categories[0].category;
+    if (_menuCategoryCubit.state.categories.isNotEmpty) {
+      String defaultMenuCategory =
+          _menuCategoryCubit.state.categories[0].category;
 
-    if (_selectedMenuCategories == null) {
-      setState(() {
-        _selectedMenuCategories = defaultMenuCategory;
-      });
-      await onGetMenu(defaultMenuCategory);
-    } else {
-      await onGetMenu(_selectedMenuCategories!);
+      if (_selectedMenuCategories == null) {
+        setState(() {
+          _selectedMenuCategories = defaultMenuCategory;
+        });
+        await onGetMenu(defaultMenuCategory);
+      } else {
+        await onGetMenu(_selectedMenuCategories!);
+      }
     }
   }
 

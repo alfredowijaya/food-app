@@ -23,7 +23,7 @@ class Menucard extends StatelessWidget {
       ),
       child: Container(
         decoration: BoxDecoration(
-            color: ColorConstants.white,
+            color: ColorConstants.blackBackgound,
             borderRadius: BorderRadius.circular(20)),
         width: (MediaQuery.of(context).size.width / 2) - 22,
         height: ((MediaQuery.of(context).size.width / 2) - 22) * 4 / 3,
@@ -52,7 +52,7 @@ class Menucard extends StatelessWidget {
                       menu.name,
                       style: Theme.of(context).textTheme.bodyMedium!.merge(
                             const TextStyle(
-                              color: ColorConstants.darkGrey,
+                              color: ColorConstants.white,
                               fontWeight: FontWeight.w600,
                             ),
                           ),

@@ -63,6 +63,7 @@ class HomeHeader extends StatelessWidget {
               const SizedBox(height: 20),
               TextField(
                 decoration: InputDecoration(
+                  focusColor: ColorConstants.darkGrey,
                   filled: true,
                   fillColor: ColorConstants.darkGrey,
                   hintStyle: const TextStyle(color: ColorConstants.white),
@@ -120,19 +121,29 @@ class HomeHeader extends StatelessWidget {
           height: 1,
         ),
         Container(
-          height: 50,
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Row(
-            children: [
-              const Icon(Icons.card_giftcard),
-              const SizedBox(width: 20),
-              Text(
-                "Surprise me",
-                style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.w600,
-                    ),
-              )
-            ],
+          color: ColorConstants.whiteBackground,
+          child: Container(
+            height: 50,
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
+              ),
+              color: ColorConstants.white,
+            ),
+            child: Row(
+              children: [
+                const Icon(Icons.card_giftcard),
+                const SizedBox(width: 20),
+                Text(
+                  "Surprise me",
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.w600,
+                      ),
+                )
+              ],
+            ),
           ),
         )
       ],
